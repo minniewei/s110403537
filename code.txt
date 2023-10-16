@@ -1,7 +1,11 @@
 #include <iostream>
 
-int main()
+int main(int argc, char **argv)
 {
 	std::cout << "Here is some code" << std::endl;
+	if(argc > 2)
+	{
+		std::cout << "Surprise!!" << std::endl;
+	}
 	exit EXIT_SUCCESS;
 }
